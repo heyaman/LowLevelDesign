@@ -1,11 +1,29 @@
 package LibraryManagement.api;
+import LibraryManagement.data.BookCopy;
+import LibraryManagement.searcher.BookSearcher;
+
 import java.util.*;
 
-import LibraryManagement.data.Book;
-
 public class BookSearchAPI {
-    public List<Book>search(String searchString){
-        return new ArrayList<>();
+    private final BookSearcher bookSearcher;
+
+    public BookSearchAPI(BookSearcher bookSearcher) {
+        this.bookSearcher = bookSearcher;
+    }
+
+    public List<BookCopy>searchByBookName(String bookName){
+        if(bookName==null){
+            throw new IllegalArgumentException("book name need");
+        }
+        return this.bookSearcher.search(bookName);
 
     }
+
+    public List<BookCopy>searchByAuthor(String authorName){
+        if(authorName==null){
+            throw new IllegalArgumentException("author name need");
+        }
+        return this.bookSearcher.search(authorName);
+    }
+
 }
