@@ -1,4 +1,4 @@
-package LibraryManagement.auth;
+package project.LibraryManagement.auth;
 
 public class UserAuthenticator {
     private UserAuthenticator(){}

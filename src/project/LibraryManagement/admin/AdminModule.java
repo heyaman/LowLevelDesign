@@ -1,8 +1,8 @@
-package LibraryManagement.admin;
+package project.LibraryManagement.admin;
 
-import LibraryManagement.accessor.DBAccessor;
-import LibraryManagement.data.BookCopy;
-import LibraryManagement.data.BookDetails;
+import project.LibraryManagement.accessor.DBAccessor;
+import project.LibraryManagement.data.BookCopy;
+import project.LibraryManagement.data.BookDetails;
 
 import java.util.Map;
 

@@ -1,4 +1,4 @@
-package LibraryManagement.data;
+package project.LibraryManagement.data;
 import java.util.*;
 
 public class BookDetails {

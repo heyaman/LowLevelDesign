@@ -1,6 +1,6 @@
-package LibraryManagement.api;
-import LibraryManagement.data.BookCopy;
-import LibraryManagement.searcher.BookSearcher;
+package project.LibraryManagement.api;
+import project.LibraryManagement.data.BookCopy;
+import project.LibraryManagement.searcher.BookSearcher;
 
 import java.util.*;
 

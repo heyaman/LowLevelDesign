@@ -1,6 +1,6 @@
-package LibraryManagement.data;
+package project.LibraryManagement.data;
 
-import LibraryManagement.util.IdGenerator;
+import project.LibraryManagement.util.IdGenerator;
 
 public class BookCopy {
     private final BookDetails bookDetails;

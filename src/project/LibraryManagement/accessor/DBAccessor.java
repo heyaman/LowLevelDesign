@@ -1,6 +1,6 @@
-package LibraryManagement.accessor;
+package project.LibraryManagement.accessor;
 
-import LibraryManagement.data.BookCopy;
+import project.LibraryManagement.data.BookCopy;
 
 import java.util.ArrayList;
 import java.util.List;

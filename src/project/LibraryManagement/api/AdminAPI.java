@@ -1,8 +1,8 @@
-package LibraryManagement.api;
+package project.LibraryManagement.api;
 
-import LibraryManagement.admin.AdminModule;
-import LibraryManagement.auth.UserAuthenticator;
-import LibraryManagement.data.BookCopy;
+import project.LibraryManagement.admin.AdminModule;
+import project.LibraryManagement.auth.UserAuthenticator;
+import project.LibraryManagement.data.BookCopy;
 
 import java.util.*;
 

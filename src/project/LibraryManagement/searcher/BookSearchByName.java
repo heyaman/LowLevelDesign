@@ -1,7 +1,7 @@
-package LibraryManagement.searcher;
+package project.LibraryManagement.searcher;
 
-import LibraryManagement.accessor.DBAccessor;
-import LibraryManagement.data.BookCopy;
+import project.LibraryManagement.accessor.DBAccessor;
+import project.LibraryManagement.data.BookCopy;
 
 import java.util.*;
 

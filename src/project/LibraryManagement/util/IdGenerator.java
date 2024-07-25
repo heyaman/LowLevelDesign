@@ -1,4 +1,4 @@
-package LibraryManagement.util;
+package project.LibraryManagement.util;
 
 import java.util.UUID;
 
