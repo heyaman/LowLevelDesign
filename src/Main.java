@@ -1,15 +1,27 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+class Solution {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welc");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+        System.out.println(new Solution().countOfPairs(new int[]{2,3,2}));
+    }
+    public int countOfPairs(int[] nums) {
+        return  helper(nums, 0, 0, 50);
+    }
+    private int helper(int[] ar, int i, int last1, int last2){
+        if(i>=ar.length){
+            return 1;
         }
+        int curNum = ar[i];
+        int ways=0;
+        if(last1>curNum)return 0;
+        for (int k=last1;k<=50 && k<=curNum;k++){
+            for (int l=last2;l>=0;l--){
+                if((k+l)==curNum){
+                    ways+=helper(ar, i+1, k, l);
+                }
+            }
+        }
+        return ways;
+
     }
 }
