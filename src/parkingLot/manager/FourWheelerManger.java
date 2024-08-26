@@ -1,8 +1,14 @@
 package parkingLot.manager;
 
+import parkingLot.data.EntryPoint;
+import parkingLot.data.ParkingSpot;
+import parkingLot.strategy.SpotFindingStrategy;
+
+import java.util.List;
+
 public class FourWheelerManger implements VehicleTypeManger{
     @Override
-    public ParkingSpot findParkingSpot() {
+    public List<ParkingSpot> findParkingSpot() {
         return null;
     }
 }
